@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">To-Do</string>
+    <string name="title_activity_add">Add Job</string>
+    <string name="title_activity_about">About To-Do</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="urgency_arrays">
+        <item>Very Urgent</item>
+        <item>Urgent</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

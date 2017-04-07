@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EmiActivity" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Principal Amount(Rs):"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/principal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Interest Rate(%):"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:hint="per annum"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Tenure:"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:hint="years"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:hint="months"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="EMI(Rs):"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/emi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Total Interest(Rs):"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/interest"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Total Payment(Rs):"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/totalPayment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="calculateEmi"
+                android:text="Calculate"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sendResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="sendResult"
+                android:text="Send Result"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151ceafa0192f7"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C00"
+    android:orientation="vertical"
+    android:padding="2dip"
+    tools:context=".EditActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Member: "
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/membersView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="50dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Medicine Name: "
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/mediNameView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="4"
+                android:hint="25 chars"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="100dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Dose: "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/doseAmountView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="1"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/doseTypeView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:entries="@array/dosetypelist" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="150dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Take every(days):"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/intervalView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="4"
+                android:hint="3 chars"
+                android:inputType="number"
+                android:maxLength="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="200dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:text="Start From: "
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/startDateView"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dip"
+                android:layout_weight="4"
+                android:background="@drawable/datebutton"
+                android:onClick="setStartDate"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_marginTop="250dip"
+        android:background="@android:color/white" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#C00"
+            android:gravity="center_vertical|center_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="255dip"
+        android:background="@android:color/white" >
+
+        <ListView
+            android:id="@+id/dosesListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#C00"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Notification: "
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1" >
+
+                <ToggleButton
+                    android:id="@+id/notificationState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/togglebutton"
+                    android:textColor="@android:color/white"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

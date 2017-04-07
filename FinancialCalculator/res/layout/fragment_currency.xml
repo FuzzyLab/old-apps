@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/financebg"
+    tools:context=".CurrencyFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spinnerFrom_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="#2196f3"
+                android:entries="@array/currency_arrays"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/inputText_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="@color/textwhite"
+                android:gravity="center"
+                android:hint="factor"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textColor="@color/textblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/loadingView_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#A2A2A2"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/spinnerTo_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="#2196f3"
+                android:entries="@array/currency_arrays"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/valueText_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:background="@color/textwhite"
+                android:gravity="center"
+                android:textColor="@color/textblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="0.2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_margin="1dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/refresh_currency"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonselector" />
+
+            <Button
+                android:id="@+id/toggle_currency"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:onClick="toggle"
+                android:text="Toggle"
+                android:textColor="@color/textwhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a1520cc2b309d2b"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Medicine Tracker</string>
+    <string name="title_activity_edit">Edit Medicine</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <string name="home">Home</string>
+    <string name="members">Members</string>
+    <string name="history">Missed History</string>
+    <string name="about">Help</string>
+    <string name="settings">Settings</string>
+    
+    <string-array name="snoozelist">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="dosetypelist">
+        <item>tablet(s)</item>
+        <item>capsule(s)</item>
+        <item>spoon(s)</item>
+        <item>sachet(s)</item>
+        <item>packet(s)</item>
+    </string-array>
+    <string-array name="medicineslist">
+        <item>Actinomycin D</item>
+        <item>Activated Charcoal</item>
+        <item>Acyclovir</item>
+        <item>Adenosine</item>
+        <item>Adrenaline Bitartrate</item>
+        <item>Albendazole</item>
+        <item>Albumin</item>
+        <item>Allopurinol</item>
+        <item>Alpha Interferon</item>
+        <item>Alprazolam</item>
+        <item>Aluminium Hydroxide</item>
+        <item>Amikacin</item>
+        <item>Amiodarone</item>
+        <item>Amitriptyline</item>
+        <item>Amlodipine</item>
+        <item>Amoxicillin</item>
+        <item>Amoxicillin+Clavulinic acid</item>
+        <item>Amphotericin B</item>
+        <item>Ampicillin</item>
+        <item>Anti-D immunoglobin (human)</item>
+        <item>Antitetanus Human immunoglobin</item>
+        <item>Artesunate</item>
+        <item>Ascorbic Acid</item>
+        <item>Atenolol</item>
+        <item>Atorvastatin</item>
+        <item>Atracurium besylate</item>
+        <item>Atropine Sulphate</item>
+        <item>Azathioprine</item>
+        <item>Azithromycin</item>
+        <item>B.C.G Vaccine</item>
+        <item>Barium Sulphate</item>
+        <item>Beclomethasone Dipropionate</item>
+        <item>Benzathine Benzylpenicillin</item>
+        <item>Benzoin Compound</item>
+        <item>Benzyl benzoate</item>
+        <item>Betamethasone</item>
+        <item>Betamethasone Dipropionate</item>
+        <item>Betaxolol Hydrochloride</item>
+        <item>Bisacodyl</item>
+        <item>Bleaching Powder</item>
+        <item>Bleomycin</item>
+        <item>Bromocriptine Mesylate</item>
+        <item>Bupivacaine Hydrochloride</item>
+        <item>Busulphan</item>
+        <item>Calamine</item>
+        <item>Calcium carbonate</item>
+        <item>Calcium gluconate</item>
+        <item>Calcium Ipodate</item>
+        <item>Carbamazepine</item>
+        <item>Carbimazole</item>
+        <item>Carboplatin</item>
+        <item>Cefixime</item>
+        <item>Cefotaxime</item>
+        <item>Ceftazidime</item>
+        <item>Ceftriaxone</item>
+        <item>Cephalexin</item>
+        <item>Cetrimide</item>
+        <item>Cetrizine</item>
+        <item>Chlorambucil</item>
+        <item>Chloramphenicol</item>
+        <item>Chlorhexidine</item>
+        <item>Chloroquine phosphate</item>
+        <item>Chlorpheniramine Maleate</item>
+        <item>Chlorpromazine hydrochloride</item>
+        <item>Ciprofloxacin Hydrochloride</item>
+        <item>Cisplatin</item>
+        <item>Clindamycin</item>
+        <item>Clofazimine</item>
+        <item>Clomiphene citrate</item>
+        <item>Clopidogrel</item>
+        <item>Clotrimazole</item>
+        <item>Cloxacillin</item>
+        <item>Coal Tar</item>
+        <item>Codeine phosphate</item>
+        <item>Colchicine</item>
+        <item>Condoms</item>
+        <item>Co-Trimoxazole</item>
+        <item>Cryoprecipitate</item>
+        <item>Cyanocobalamin</item>
+        <item>Cyclophosphamide</item>
+        <item>Cyclosporine</item>
+        <item>Cytosine arabinoside</item>
+        <item>D.P.T Vaccine</item>
+        <item>Dacarbazine</item>
+        <item>Danazol</item>
+        <item>Dapsone</item>
+        <item>Daunorubicin</item>
+        <item>Desferrioxamine mesylate</item>
+        <item>Dexamethasone</item>
+        <item>Dexchlorpheniramine Maleate</item>
+        <item>Dextran-40</item>
+        <item>Dextran-70</item>
+        <item>Dextromethorphan</item>
+        <item>Diazepam</item>
+        <item>Diclofenac</item>
+        <item>Dicyclomine Hydrochloride</item>
+        <item>Didanosine</item>
+        <item>Diethylcarbamazine citrate</item>
+        <item>Digoxin</item>
+        <item>Dihydroergotamine</item>
+        <item>Diloxanide Furoate</item>
+        <item>Diltiazem</item>
+        <item>Dimercaprol</item>
+        <item>Diphtheria Antitoxin</item>
+        <item>Dithranol</item>
+        <item>Dobu tamine</item>
+        <item>Domperidone</item>
+        <item>Dopamine Hydrochloride</item>
+        <item>Doxorubicin</item>
+        <item>Doxycycline</item>
+        <item>Efavirenz</item>
+        <item>EMLA cream</item>
+        <item>Enalapril Maleate</item>
+        <item>Enoxaparin</item>
+        <item>Erythromycin Estolate</item>
+        <item>Esmolol</item>
+        <item>Ethambutol</item>
+        <item>Ether</item>
+        <item>Ethinylestradiol</item>
+        <item>Ethinylestradiol</item>
+        <item>Ethyl Alcohol 70%</item>
+        <item>Etoposide</item>
+        <item>Factor IX Complex</item>
+        <item>Factor VIII Concentrate</item>
+        <item>Famotidine</item>
+        <item>Fentanyl</item>
+        <item>Ferrous Salt</item>
+        <item>Filgrastim</item>
+        <item>Fluconazole</item>
+        <item>Flumazenil</item>
+        <item>Fluorescein</item>
+        <item>Fluoxetine hydrochloride</item>
+        <item>Flutamide</item>
+        <item>Folic Acid</item>
+        <item>Folinic Acid</item>
+        <item>Formaldehyde IP</item>
+        <item>Framycetin Sulphate</item>
+        <item>Fresh frozen plasma</item>
+        <item>Furosemide</item>
+        <item>Gemcitabine hydrochloride</item>
+        <item>Gentamicin</item>
+        <item>Gentian Violet</item>
+        <item>Glibenclamide</item>
+        <item>Glucagon</item>
+        <item>Glucose</item>
+        <item>Glucose with sodium chloride</item>
+        <item>Glutaraldehy de</item>
+        <item>Glycerin</item>
+        <item>Glyceryl Trinitrate</item>
+        <item>Griseofulvin</item>
+        <item>Haloperidol</item>
+        <item>Halothane with vaporizer</item>
+        <item>Heparin Sodium</item>
+        <item>Hepatitis B Vaccine</item>
+        <item>Homatropine</item>
+        <item>Hormone Releasing IUD</item>
+        <item>Hydrochlorothiazide</item>
+        <item>Hydrogen Peroxide</item>
+        <item>Hydroxyc hloroquine phosphate</item>
+        <item>Hydroxyethyl Starch</item>
+        <item>Hyoscine Butyl Bromide</item>
+        <item>Ibuprofen</item>
+        <item>Ifosfamide</item>
+        <item>Imatinib</item>
+        <item>Imipramine</item>
+        <item>Indinavir</item>
+        <item>Insulin Injection(Soluble)</item>
+        <item>Intermediate Acting</item>
+        <item>Intraperitoneal Dialysis Soln.</item>
+        <item>Iodine</item>
+        <item>Iopanoic Acid</item>
+        <item>Ipratropium bromide</item>
+        <item>Iron Dextran</item>
+        <item>Isoflurane</item>
+        <item>Isoniazid</item>
+        <item>Isosorbide 5 Mononitrate</item>
+        <item>Ispaghula</item>
+        <item>IUD containing Copper</item>
+        <item>Ketamine Hydrochloride</item>
+        <item>L- Asparaginase</item>
+        <item>Lamivudin e</item>
+        <item>Lamivudi ne + Zidovudine</item>
+        <item>Leflunomide</item>
+        <item>Levodopa+ Carbidopa</item>
+        <item>Levothyroxine</item>
+        <item>Lignocaine</item>
+        <item>Lignocaine Hydrochloride</item>
+        <item>Lithium Carbonate</item>
+        <item>Lorazepam</item>
+        <item>Losartan Potassium</item>
+        <item>Magnesium sulphate</item>
+        <item>Mannitol</item>
+        <item>Measles Vaccine</item>
+        <item>Med roxy Progesterone Acetate</item>
+        <item>Mefloquine</item>
+        <item>Meglumine Iothalamate</item>
+        <item>Meglumine Iotroxate</item>
+        <item>Melphalan</item>
+        <item>Mercaptopurine</item>
+        <item>Mesna</item>
+        <item>Metformin</item>
+        <item>Methotrexate</item>
+        <item>Methyl Cellulose</item>
+        <item>Methyl Ergometrine</item>
+        <item>Methyldopa</item>
+        <item>MethylPrednisolone</item>
+        <item>Methylrosanilinium Chloride</item>
+        <item>Methylthioninium chloride</item>
+        <item>Metoclopramide</item>
+        <item>Metoprolol</item>
+        <item>Metronidazole</item>
+        <item>Miconazole</item>
+        <item>Midazolam</item>
+        <item>Mifepristone</item>
+        <item>Misoprostol</item>
+        <item>Mitomycin -C</item>
+        <item>Morphine Sulphate</item>
+        <item>Multivitamins</item>
+        <item>N/2 Saline</item>
+        <item>N/5 Saline</item>
+        <item>N-acetylcysteine</item>
+        <item>Naloxone</item>
+        <item>Nelfinavir</item>
+        <item>Neomycin + Bacitracin</item>
+        <item>Neostigmine</item>
+        <item>Nevirapine</item>
+        <item>Nicotinamide</item>
+        <item>Nifedipine</item>
+        <item>Nitrofurantoin</item>
+        <item>Nitrous Oxide</item>
+        <item>Norethisterone</item>
+        <item>Normal Saline</item>
+        <item>Nystatin</item>
+        <item>Ofloxacin</item>
+        <item>Olanzapine</item>
+        <item>Omeprazole</item>
+        <item>Ondansetron</item>
+        <item>Oral Poliomyelitis vaccine</item>
+        <item>Oral Rehydration Salts</item>
+        <item>Oxaliplatin</item>
+        <item>Oxygen</item>
+        <item>Oxytocin</item>
+        <item>Paclitaxel</item>
+        <item>Pantoprazole</item>
+        <item>Paracetamol</item>
+        <item>Penicillamine</item>
+        <item>Pentamidine Isothionate</item>
+        <item>Permethrin</item>
+        <item>Pheniramine Maleate</item>
+        <item>Phenobarbitone</item>
+        <item>Phenylephrine</item>
+        <item>Phenytoin Sodium</item>
+        <item>Phytomenadione</item>
+        <item>Pilocarpine</item>
+        <item>Piperazine</item>
+        <item>Platelet Rich Plasma</item>
+        <item>Polygeline</item>
+        <item>Polyvalent Antisnake Venom</item>
+        <item>Potassium Chloride</item>
+        <item>Potassium Permanganate</item>
+        <item>Povidone Iodine</item>
+        <item>Pralidoxime Chloride(2 -PAM)</item>
+        <item>Praziquantel</item>
+        <item>Predn isolone</item>
+        <item>Prednisolone Acetate</item>
+        <item>Prednisolone Sodium Phosphate</item>
+        <item>Premix Insulin 30:70 injection</item>
+        <item>Primaquine</item>
+        <item>Procainamide Hydrochloride</item>
+        <item>Procarbazine</item>
+        <item>Promethazine</item>
+        <item>Propofol</item>
+        <item>Propranolol hydrochloride</item>
+        <item>Propyliodone</item>
+        <item>Protamine Sulphate</item>
+        <item>Pyrazinamid e</item>
+        <item>Pyridostigmine</item>
+        <item>Pyridoxine</item>
+        <item>Pyrimethamine</item>
+        <item>Quinine sulphate</item>
+        <item>Rabies immunoglobin</item>
+        <item>Rabies Vaccine</item>
+        <item>Raloxifene</item>
+        <item>Ranitidine</item>
+        <item>Riboflavin</item>
+        <item>Rifampicin</item>
+        <item>Ringer Lactate</item>
+        <item>Ritonavir</item>
+        <item>Salbutamol sulphate</item>
+        <item>Salicylic Acid</item>
+        <item>Saquinavir</item>
+        <item>Sevoflurane</item>
+        <item>Silver Sulphadiazine</item>
+        <item>Sodium Bicarbonate</item>
+        <item>Sodium Iothalamate</item>
+        <item>Sodium Meglumine Diatrizoate</item>
+        <item>Sodium Nitrite</item>
+        <item>Sodium Nitroprusside</item>
+        <item>Sodium Stibogluconate</item>
+        <item>Sodium Thio sulphate</item>
+        <item>Sodium Valproate</item>
+        <item>Specific antisnake venom</item>
+        <item>Spironolactone</item>
+        <item>Stavudine</item>
+        <item>Stavudine+Lamivudine</item>
+        <item>Streptokinase</item>
+        <item>Streptomycin Sulphate</item>
+        <item>Succinyl choline chloride</item>
+        <item>Sulfadoxine + Pyrimethamine</item>
+        <item>Sulfasalazine</item>
+        <item>Sulphacetamide Sodium</item>
+        <item>Sulphadiazine</item>
+        <item>Tamoxifen Citrate</item>
+        <item>Terbutaline Sulphate</item>
+        <item>Testosterone</item>
+        <item>Tetanus Toxoid</item>
+        <item>Tetracaine Hydrochloride</item>
+        <item>Thiamine</item>
+        <item>Thiopentone Sodium</item>
+        <item>Timolol Maleate</item>
+        <item>Tramadol</item>
+        <item>Trihexyphenidyl Hydrochloride</item>
+        <item>Tropicamide</item>
+        <item>Urokinase</item>
+        <item>Vancomycin Hydrochloride</item>
+        <item>Vecuronium</item>
+        <item>Verapamil</item>
+        <item>Vinblastine sulphate</item>
+        <item>Vincristine</item>
+        <item>Vitamin A</item>
+        <item>Vitamin D (Ergocalciferol)</item>
+        <item>Warfarin sodium</item>
+        <item>Water for Injection</item>
+        <item>Zidovudine</item>
+        <item>Zinc Oxide</item>
+        <item>Zinc Sulfate</item>
+    </string-array>
+
+</resources>

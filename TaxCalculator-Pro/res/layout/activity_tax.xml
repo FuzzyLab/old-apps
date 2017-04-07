@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/residence"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/below60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/below60"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/seniorBelow80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/seniorBelow80"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/above80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/above80"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/grossIncome"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/grossIncome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:hint="@string/yearly"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/basicIncome"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/basicIncome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/textborder"
+                android:gravity="center"
+                android:hint="@string/yearly"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="calculateHra"
+                android:text="@string/calculateHra"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="calculateInvestment"
+                android:text="@string/calculateInvestment"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/hraText"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/hra"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/deductionText"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/deduction"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/taxrate"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/taxRate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/eduCess"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/eduCess"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="@string/tax"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/incomeTax"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="calculateTax"
+                android:text="@string/calculate"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:onClick="sendResult"
+                android:text="Send Result"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151ceab37f2e42"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</RelativeLayout>

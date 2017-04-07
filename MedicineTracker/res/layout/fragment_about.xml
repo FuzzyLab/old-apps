@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AboutFragment" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="Fuzzy Labs"
+                android:textColor="#AA0000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="Medicine Tracker"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="-- HELP --\n\nSetting doses is very simple. First add a new medicine. It will redirect you to edit your medicine.\n a) Member: Select the member for whom you want to track this medicine.\n b) Medicine Name: Enter the name of the medicine.\n c) Dose: Enter the amount of dose you have been prescribed.\n d) Take every(days): Enter the interval (in days) as prescribed. If the medicine is to be taken daily, the interval should be 1, and so on..\n e) Start From: Enter the date on which you started/will start taking the medicine.\n f) Next, you can add as many number of doses for a day as you want.\n\nFor example, say you want to take 2 tablets of 'X' medicine at 9:00AM and 9:00PM on alternate days starting 24-Mar-2013, then your inputs should be as follows:\n  Medicine Name - X\n  Dose - 2 tablet(s)\n  Take every(days) - 2\n  Starting - 2013-03-24\n  Dose1 - 09:00:00\n  Dose2 - 21:00:00\n  Set Notification ON\n\nFurther features:\n 1. You can also add notes to your medicine (an option available in the Edit Medicine page).\n 2. You can manually add a missed dose in the Missed History page\n 3. A medicine will turn light-red if it is due in less than 2 hours.\n 4. You can add multiple members for whom you can track medicines individually.\n\nNotification Options:\n 1. Touching notification accepts the dose.\n 2. Skip - Skip the dose. This dose will be added to the 'Missed History' page.\n 3. Snooze - Snooze the dose by 10 minutes(customizable from settings).\n\nAvailable Settings:\n 1. Set custom snooze duration(default = 10 minutes).\n 2. Set custom notification tone(default = Android default notification tone).\n 3. Set vibrate yes/no on notification.\n 4. Set LED light yes/no on notification."
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bakidoscreennew"
+        android:gravity="fill_horizontal"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:layout_weight="20"
+            android:background="@drawable/border" >
+
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Welcome to Fuzzy Words.\nPress 'Random' to find some interesting English words with their meanings. Share them with your friends. Add your own words to the list.\nGet going now!!!"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_mainactivity"
+                android:onClick="addData"
+                android:text="Add"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/item_share"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_mainactivity"
+                android:onClick="onShare"
+                android:text="Share"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_mainactivity"
+                android:onClick="viewData"
+                android:text="View"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/item_random"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_mainactivity"
+                android:onClick="onSwipe"
+                android:text="Random"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151f405c195682"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</RelativeLayout>

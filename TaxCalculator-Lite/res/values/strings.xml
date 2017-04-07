@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tax Calculator - Lite</string>
+    <string name="action_settings">Settings</string>
+    <string name="grossIncome">Gross Income(Rs):</string>
+    <string name="investment">Investment(Rs):</string>
+    <string name="hra">HRA(Rs):</string>
+    <string name="eduCess">Edu Cess(Rs):</string>
+    <string name="tax">Income Tax(Rs):</string>
+    <string name="calculate">Calculate</string>
+    <string name="yearly">Yearly</string>
+    <string name="below60">Below 60</string>
+    <string name="seniorBelow80">Senior Below 80</string>
+    <string name="above80">80+</string>
+
+    <color name="red">#AA0000</color>
+    <color name="black">#000000</color>
+
+</resources>

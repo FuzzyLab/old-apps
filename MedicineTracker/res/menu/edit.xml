@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/notes"
+        android:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/done"
+        android:showAsAction="always"
+        android:title="" />
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#333"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mExitDialogDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Closing this app.."
+            android:textColor="#fff"
+            android:textSize="20dip"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mExitDialogTitleBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dip"
+        android:layout_below="@id/mExitDialogDesc"
+        android:background="#AAA" >
+    </Button>
+
+    <Button
+        android:id="@+id/closingButton"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/mExitDialogDesc"
+        android:layout_height="45dp"
+        android:textColor="#fff"
+        android:background="#00000000"
+        android:textSize="19dip"
+        android:typeface="serif" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AboutActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="Fuzzy Labs"
+                android:textColor="#AA0000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="Tax Calculator India - Pro"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="FY14, 2014-15"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:text="-- HELP --\n  -Tax Calculation-\n\n  Tax Slab:-\n    *Age Below 60\n      0 - 2,50,000\t\t\t0%\n      2,50,001 - 5,00,000\t\t\t10%\n      5,00,001 - 10,00,000\t\t\t20%\n      10,00,001 - 1,00,00,000\t\t\t30%\n      1,00,00,001 n above\t\t\t33%\n\n    *Age between 60 n 80\n      0 - 3,00,000\t\t\t0%\n      3,00,001 - 5,00,000\t\t\t10%\n      5,00,001 - 10,00,000\t\t\t20%\n      10,00,001 - 1,00,00,000\t\t\t30%\n      1,00,00,001 n above\t\t\t33%\n\n    *Age Above 80\n      0 - 5,00,000\t\t\t0%\n      5,00,001 - 10,00,000\t\t\t20%\n      10,00,001 - 1,00,00,000\t\t\t30%\n      1,00,00,001 n above\t\t\t33%\n\n    *Gross Income : Enter Taxable Income.\n    *Basic Salary : Enter Base Income.(Important for HRA Calculation).\n\n  -HRA Deduction Calculation-\n    *House Rent : Rent you pay.\n    *HRA Received : HRA Received from your employer(20-40% of Base salary).\n\n  -Investment Deduction Calculation-\n    *80CC/80CCC/80CCD : Limit of Rs. 1,50,000 on total of all items except Infrastructure Bonds (Limit of Rs. 20,000).\n        **PF : Amount of PF contributed by you and your company to your PF Account.\n    *80D/80E : Interests and Premiums you are paying.\n    *Others : It includes Medical bills, Conveyance, Food Coupons, etc.\n\n  -Note-\n    *People with Salary(After deductions) belowRs. 5,00,000 are liable to benefit Rs 2,000 Tax Credit"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

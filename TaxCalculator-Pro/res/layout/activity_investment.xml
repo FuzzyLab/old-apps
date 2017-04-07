@@ -1,0 +1,444 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/section1Text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="@string/section1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/PFText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/pf"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/pf"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/fixedDepositeText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/fixedDeposite"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/fixedDeposite"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mutualFundText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/mutualFund"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/mutualFund"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/homeLoanPremiumText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/homeLoanPremium"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/homeLoanPremium"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/infraBondText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/infraBond"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/infraBond"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/others1Text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/others"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/others1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/section2Text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="@string/section2"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/medicalInsuranceText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/medicalInsurance"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/medicalInsurance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/eduLoanInterestText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/eduLoanInterest"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/eduLoanInterest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/housingLoanInterestText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/homeLoanInterest"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/homeLoanInterest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/other2Text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="@string/others"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/others2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/textborder"
+            android:gravity="center"
+            android:hint="@string/yearly"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/totalInvestmentText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="@string/totalInvestment"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/totalInvestment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:onClick="calculateInvestment"
+            android:text="@string/calculateInvestment"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:onClick="copy"
+            android:text="@string/copy"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</TableLayout>

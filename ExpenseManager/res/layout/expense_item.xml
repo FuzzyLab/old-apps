@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/expenseView"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:text="Medicine"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dateView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:text="Due Date"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/timeView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:text="Due Time"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0.1dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginTop="10dip"
+            android:background="#0C0"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/deleteExpense"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/deletebutton"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

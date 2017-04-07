@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <DatePicker
+            android:id="@+id/historyDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:layout_centerHorizontal="true" >
+        </DatePicker>
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_margin="5dip"
+        android:background="#f00" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TimePicker
+            android:id="@+id/historyTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+        </TimePicker>
+    </RelativeLayout>
+
+</LinearLayout>

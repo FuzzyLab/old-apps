@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EMI Calculator</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about">About</string>
+
+    <color name="black">#000000</color>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="rate">Rate</string>
+    <string name="share">Share</string>
+
+</resources>

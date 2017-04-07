@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExpenseManager</string>
+    <string name="expenses">Expenses</string>
+    <string name="groups">Groups</string>
+    <string name="history">History</string>
+    <string name="categories">Categories</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="addExpense">Add</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

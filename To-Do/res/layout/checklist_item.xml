@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_margin="2dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginRight="100dip" >
+
+            <TextView
+                android:id="@+id/checkText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dip" >
+
+            <Button
+                android:id="@+id/checkDone"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/done"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/checkDelete"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/reddeletebutton"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

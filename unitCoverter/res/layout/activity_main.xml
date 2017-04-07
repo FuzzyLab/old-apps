@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Type"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="2" >
+        </Spinner>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="50"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="15dp" >
+        </TextView>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Value"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextValue"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="1"
+            android:background="#fff"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </EditText>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="From"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center" >
+        </Spinner>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="To"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/SpinnerTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center" >
+        </Spinner>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewResult"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/resultborder"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="18dp" >
+        </TextView>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:text="Convert"
+            android:textColor="#fff"
+            android:textSize="18dp" >
+        </Button>
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:text="Toggle"
+            android:textColor="#fff"
+            android:textSize="18dp" >
+        </Button>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151ebf8b71bfd3"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</LinearLayout>

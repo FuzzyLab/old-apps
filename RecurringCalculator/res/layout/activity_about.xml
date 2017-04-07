@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="top"
+        android:textSize="17sp"
+        android:textColor="#AA0000"
+        android:text="Fuzzy Labs" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:text="Recurring Deposit Maturity Value Calculator" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="top"
+        android:text="-- HELP --\n  -Recurring Deposit Maturity Value Calculation-\n\n    *Compounded Quarterly\n\n    *Recurring Calculation is made till the nearest multiple of a quarter and for the remaining months, the maturity is incremented on simple interest."
+        android:textSize="15sp" />
+
+</LinearLayout>

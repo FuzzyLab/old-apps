@@ -1,0 +1,7 @@
+*.metadata
+*.class
+*.classpath
+*.project
+*.prefs
+*/gen
+*/bin

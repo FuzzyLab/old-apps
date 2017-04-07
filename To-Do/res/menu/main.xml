@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/search"
+        android:showAsAction="collapseActionView|ifRoom"/>
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/clearAll"
+        android:showAsAction="never"
+        android:title="Clear All Done"/>
+    <item
+        android:id="@+id/about"
+        android:showAsAction="never"
+        android:title="Help"/>
+    <item
+        android:id="@+id/rate"
+        android:showAsAction="never"
+        android:title="Rate"/>
+    <item
+        android:id="@+id/share"
+        android:showAsAction="never"
+        android:title="Share"/>
+
+</menu>

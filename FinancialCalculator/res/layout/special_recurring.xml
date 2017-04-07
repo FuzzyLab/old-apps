@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/financebg"
+    tools:context=".RecurringFragment" >
+
+    <TableLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:background="@drawable/formbluewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Quarterly Instalment(Rs):"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/instalment_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/textblack"
+                android:textSize="15sp"
+                android:maxLength="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/formbluewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Interest Rate(%):"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/rate_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:hint="per annum"
+                android:inputType="numberDecimal"
+                android:textColor="@color/textblack"
+                android:textSize="15sp"
+                android:maxLength="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/formbluewhitewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Period:"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/year_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:hint="years"
+                android:inputType="number"
+                android:textColor="@color/textblack"
+                android:textSize="15sp"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/month_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:hint="months"
+                android:inputType="number"
+                android:textColor="@color/textblack"
+                android:textSize="15sp"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/caution_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#AAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/formdarkbluewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Total Deposit(Rs):"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/totalDeposit_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:textColor="@color/textblack"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/formdarkbluewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Maturity Amount(Rs):"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/maturity_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:textColor="@color/textblack"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/formdarkbluewhite" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="Total Interest(Rs):"
+                android:textColor="@color/textwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/interest_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:textColor="@color/textblack"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/calculate_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="Calculate"
+                android:textColor="@color/textwhite"
+                android:background="@drawable/button"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/reset_recurring_p"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="Reset"
+                android:textColor="@color/textwhite"
+                android:background="@drawable/button"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a1520cc2b309d2b"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</RelativeLayout>

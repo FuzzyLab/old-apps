@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tax Calculator - Pro</string>
+    <string name="hra_name">HRA Calculator</string>
+    <string name="investment_name">Investment Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="grossIncome">Gross Income(Rs):</string>
+    <string name="basicIncome">Basic Income(Rs):</string>
+    <string name="calculateHra">Calculate HRA</string>
+    <string name="calculateInvestment">Calculate Investment</string>
+    <string name="investment">Investment(Rs):</string>
+    <string name="hra">HRA(Rs):</string>
+    <string name="eduCess">Edu Cess(Rs):</string>
+    <string name="tax">Income Tax(Rs):</string>
+    <string name="calculate">Calculate</string>
+    <string name="yearly">Yearly</string>
+    <string name="below60">Below 60</string>
+    <string name="seniorBelow80">Senior Below 80</string>
+    <string name="above80">80+</string>
+    <string name="hraText">HRA Deduction:</string>
+    <string name="hra2">HRA Deduction:</string>
+    <string name="deductionText">Total Deduction:</string>
+    <string name="copy">Copy</string>
+    <string name="metro">Metro</string>
+    <string name="nonMetro">Non-Metro</string>
+    <string name="resident">Resident:</string>
+    <string name="hraReceived">HRA Received(Rs):</string>
+    <string name="houseRentPaid">House Rent(Rs):</string>
+    <string name="section1">80CC / 80CCC / 80CCD:</string>
+    <string name="pf">PF + PPF(Rs):</string>
+    <string name="fixedDeposite">Fixed Deposite(Rs):</string>
+    <string name="mutualFund">Mutual Fund(Rs):</string>
+    <string name="homeLoanPremium">Home Loan Premium(Rs):</string>
+    <string name="others">Others(Rs):</string>
+    <string name="infraBond">Infra. Bond(Rs):</string>
+    <string name="tutionFees">Tution Fees(Rs):</string>
+    <string name="section2">80D / 80E:</string>
+    <string name="medicalInsurance">Medical Insurance(Rs):</string>
+    <string name="homeLoanInterest">Home Loan Interest(Rs):</string>
+    <string name="eduLoanInterest">Edu. Loan Interest(Rs):</string>
+    <string name="totalInvestment">Total Investment(Rs):</string>
+    <string name="taxrate">Tax Rate: </string>
+
+    <color name="red">#AA0000</color>
+    <color name="black">#000000</color>
+
+</resources>

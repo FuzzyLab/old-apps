@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".CurrencyConverterActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a151d41a6c59e3f"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/border" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/spinnerFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:entries="@array/currency_arrays"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/inputText"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:hint="factor"
+                    android:inputType="numberDecimal"
+                    android:textColor="#fff"
+                    android:maxLength="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.5" >
+
+                <TextView
+                    android:id="@+id/loadingView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#A2A2A2"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/spinnerTo"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:entries="@array/currency_arrays"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/valueText"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:onClick="add"
+                        android:text="Add To Favorites"
+                        android:textColor="#000" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:onClick="viewAll"
+                        android:text="Favorites"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:onClick="refresh"
+                    android:background="@drawable/buttonselector" />
+            </LinearLayout>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/graphImage"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="4"
+            android:onClick="changeRange" />
+    </LinearLayout>
+
+</RelativeLayout>

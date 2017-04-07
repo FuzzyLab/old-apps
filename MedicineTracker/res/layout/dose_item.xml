@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:layout_margin="1dip"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/doseView"
+        android:layout_width="match_parent"
+        android:layout_height="41dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="100dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/timebutton"
+        android:textColor="@android:color/white"
+        android:text="Select Time" />
+
+    <RelativeLayout
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dip" >
+
+        <Button
+            android:id="@+id/addDoseView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dip"
+            android:background="@drawable/addbutton"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/deleteDoseView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dip"
+            android:background="@drawable/deletebutton"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>
